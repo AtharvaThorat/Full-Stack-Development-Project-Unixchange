@@ -1,0 +1,72 @@
+/* profiledata.css */
+
+.profileUserData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #D71313;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.profileUserData .profileText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center; /* Align the text center for smaller screens */
+}
+
+.profileUserData h4 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.profileUserData u {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.profileUserData .profileditimage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileditimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* For devices with screen width less than or equal to 600px (e.g., smartphones) */
+@media screen and (max-width: 1000px) {
+  .profileUserData {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileUserData .profileText {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .profileUserData .profileditimage {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* For devices with screen width less than or equal to 400px (e.g., small smartphones) */
+@media screen and (max-width: 400px) {
+  .profileUserData .profileditimage {
+    width: 100px;
+    height: 100px;
+  }
+}
